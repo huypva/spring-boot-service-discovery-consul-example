@@ -9,7 +9,10 @@ The example project for StringBoot service
 ## Project structure
 ```
 .
-├── hello-world
+├── service-A
+│   ├── Dockerfile
+│   ...
+├── service-B
 │   ├── Dockerfile
 │   ...
 ├── docker-compose.yaml
@@ -50,7 +53,7 @@ $ docker-compose -f ./docker-compose-service.yml -p spring-boot-service up -d
 ## Run testing
 
 ```shell script
-curl http://localhost:8081/greet?name=World
+curl http://localhost:8081/greeta/1
 ```
 
 ## Stop project

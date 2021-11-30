@@ -1,0 +1,11 @@
+server:
+  port : 8081
+spring:
+  profiles:
+    active: local
+  application:
+    name: "service-A"
+serviceb:
+  url: http://localhost:8082
+  path:
+    greet: /greetb/{id}
