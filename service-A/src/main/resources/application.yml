@@ -5,7 +5,19 @@ spring:
     active: local
   application:
     name: "service-A"
-serviceb:
-  url: http://localhost:8082
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      enabled: true
+      discovery:
+        register: true
+        instanceId: "${spring.application.name}-${server.port}-${spring.cloud.client.ip-address}"
+        prefer-ip-address: true
+        health-check-critical-timeout: "1m"
+      config:
+        enabled: false
+service-B:
+#  url: http://localhost:8082
   path:
     greet: /greetb/{id}

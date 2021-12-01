@@ -30,6 +30,7 @@ The example project for StringBoot service
 ## Start infrastructure
 
 ```shell script
+$ cd infrastructure
 $ docker-compose -f ./docker-compose-infrastructure.yml -p spring-boot-infrastructure up -d
 ```
 
@@ -69,3 +70,9 @@ $ docker-compose -f ./docker-compose-service.yml -p spring-boot-service down
 ## Contribute
 
 ## Reference
+- https://cloud.spring.io/spring-cloud-consul/reference/html/appendix.html#common-application-properties
+- https://programmer.ink/think/use-consul-to-implement-service-discovery-instance-id-customization-3-ways.html
+- https://piotrminkowski.com/2019/11/06/microservices-with-spring-boot-spring-cloud-gateway-and-consul-cluster/
+- https://www.baeldung.com/spring-cloud-consul
+- https://github.com/yidongnan/spring-cloud-netflix-example
+- https://piotrminkowski.com/2019/11/06/microservices-with-spring-boot-spring-cloud-gateway-and-consul-cluster/

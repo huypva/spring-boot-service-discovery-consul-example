@@ -5,3 +5,18 @@ spring:
     active: local
   application:
     name: "service-B"
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      enabled: true
+      discovery:
+        register: true
+        instanceId: "${spring.application.name}-${server.port}-${spring.cloud.client.ip-address}"
+        prefer-ip-address: true
+        health-check-critical-timeout: "1m"
+      config:
+        enabled: false
+management:
+  security:
+    enabled: false

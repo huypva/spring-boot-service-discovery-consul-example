@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * @author huypva
  */
-@FeignClient(value = "serviceb", url = "${serviceb.url}")
+@FeignClient(value = "service-B")
 public interface ServiceBClient {
 
-  @RequestMapping(method = RequestMethod.GET, value = "${serviceb.path.greet}")
+  @RequestMapping(method = RequestMethod.GET, value = "${service-B.path.greet}")
   MessageB greet(@PathVariable(name = "id") int id);
 
 }
