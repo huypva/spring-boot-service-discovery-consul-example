@@ -47,3 +47,5 @@ nb-configuration.xml
 #gradle
 .nb-gradle/
 
+# docker
+infrastructure/data/*
