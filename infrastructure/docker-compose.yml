@@ -12,3 +12,9 @@ services:
       - '8500:8500'
       - '8600:8600'
       - '8600:8600/udp'
+    networks:
+      - consul-network
+networks:
+  consul-network:
+    name: consul-network
+    driver: bridge

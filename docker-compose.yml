@@ -1,0 +1,23 @@
+version: "3.4"
+services:
+  service-a:
+    build: ./service-A
+    container_name: service-A
+    environment:
+      - spring_profiles_active=docker
+      - CONSUL_HOST=host.docker.internal
+    ports:
+      - 8081:8081
+
+  service-b:
+    build: ./service-B
+#    container_name: service-B
+    environment:
+      - spring_profiles_active=docker
+      - CONSUL_HOST=host.docker.internal
+    ports:
+      - 8082-8083:8082
+networks:
+  default:
+    external:
+      name: consul-network

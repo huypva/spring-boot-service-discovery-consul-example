@@ -1,9 +1,0 @@
-version: "3.4"
-services:
-  service-b:
-    build: ./service-B
-    container_name: service-B
-    environment:
-      - spring_profiles_active=docker
-    ports:
-      - 8081:8081

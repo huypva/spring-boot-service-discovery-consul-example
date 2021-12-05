@@ -1,5 +1,5 @@
 server:
-  port : 8082
+  port : 8083
 spring:
   profiles:
     active: local
@@ -17,6 +17,3 @@ spring:
         health-check-critical-timeout: "1m"
       config:
         enabled: false
-management:
-  security:
-    enabled: false
