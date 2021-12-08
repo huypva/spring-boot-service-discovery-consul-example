@@ -112,3 +112,4 @@ $ docker-compose down
 - https://www.baeldung.com/spring-cloud-consul
 - https://github.com/yidongnan/spring-cloud-netflix-example
 - https://piotrminkowski.com/2019/11/06/microservices-with-spring-boot-spring-cloud-gateway-and-consul-cluster/
+- https://github.com/hashicorp/learn-consul-docker/tree/main/datacenter-deploy-service-discovery
